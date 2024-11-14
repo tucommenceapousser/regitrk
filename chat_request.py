@@ -18,7 +18,7 @@ def get_openai_client():
 def get_coaching_response(user_message: str, user_context: dict) -> str:
     is_meal_plan = user_context.get('request_type') == 'meal_plan'
     is_french = user_context.get('language') == 'fr'
-    user_name = user_context.get('name', 'Anita')
+    user_name = user_context.get('name', 'My Friend'z')
     
     if is_french:
         system_prompt = f"""Vous êtes un coach de perte de poids encourageant et compétent pour {user_name}.
