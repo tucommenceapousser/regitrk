@@ -10,6 +10,9 @@ Un assistant personnel de perte de poids alimenté par l'IA, offrant un suivi pe
 
 [English](#english-version) | [Français](#coach-minceur-ia-)
 
+## Demo online
+**https://regitrk.onrender.com**
+
 ## ✨ Fonctionnalités
 
 - 🔐 **Authentification Sécurisée**
