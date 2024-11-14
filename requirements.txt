@@ -3,4 +3,10 @@ Flask-Login==0.6.2
 Flask-WTF==1.1.1
 Werkzeug==2.2.2
 SQLAlchemy==1.4.44
-openai==0.10.2
+flask_sqlalchemy
+flask-login
+flask-wtf
+pillow
+psycopg2-binary
+python-dotenv
+openai>=1.0.0

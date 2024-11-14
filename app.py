@@ -1,12 +1,6 @@
 import os
-from flask import Flask
+from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.orm import DeclarativeBase
-
-class Base(DeclarativeBase):
-    pass
-
-db = SQLAlchemy(model_class=Base)
 
 # create the app
 app = Flask(__name__)
@@ -21,8 +15,8 @@ app.config["SQLALCHEMY_ENGINE_OPTIONS"] = {
 # Setup secret key for sessions
 app.secret_key = os.environ.get("FLASK_SECRET_KEY") or "trkntrkn"
 
-# Initialize the app with the extension
-db.init_app(app)
+# Initialize SQLAlchemy
+db = SQLAlchemy(app)
 
 with app.app_context():
     # Import routes after db initialization to avoid circular imports

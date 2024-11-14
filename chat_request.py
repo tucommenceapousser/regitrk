@@ -111,7 +111,7 @@ def get_coaching_response(user_message: str, user_context: dict) -> str:
             temperature=0.7,
             max_tokens=1000
         )
-        return str(response.choices[0].message.content)
+        return response.choices[0].message.content
     except ValueError as ve:
         return "Erreur de configuration: Clé API manquante" if is_french else "Configuration error: Missing API key"
     except Exception as e:
